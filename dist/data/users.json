@@ -1,0 +1,4 @@
+{
+  "_note": "Default password is admin123. api.php auto-hashes on first run if this file is missing. Change via Admin > Users after login. As a secondary safeguard: you can paste a new bcrypt hash here.",
+  "admin": "$2y$10$3QdU5G3Q3yQgQrvVf6tTLeNrMQGmQ5xbBpRiK2CV.8j2xWmG6Yk5O"
+}

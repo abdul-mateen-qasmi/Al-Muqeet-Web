@@ -1,0 +1,39 @@
+Al Muqeet Technical Services LLC — v3.0 APEX
+Release Date: May 2026
+
+1. NEW FEATURES
+- AI Project Inspector: Read-only admin tab to query site structure, data flow, and safe edit paths.
+- Command Center V2: AI-powered site editing supporting English, Urdu, and Roman Urdu. Includes mandatory preview, diff visualization, and risk assessment.
+- Preset Gallery: One-click application of predefined themes, hero styles, and announcement bars.
+- System Diagnostics: 12-category automated health check for API, file system, schema, and security.
+- Visitor Chat Widget: Public-facing AI assistant trained on Al Muqeet services, featuring automated lead capture.
+
+2. BACKEND ENHANCEMENTS (api.php)
+- Added 13 new endpoints to support AI features, undo/redo, and diagnostics.
+- Implemented atomic JSON writes (write to temp -> rename) to prevent data corruption.
+- Added deep merging and dot-notation path resolution for precise JSON patching.
+- Implemented a token-bucket rate limiter for the public chat endpoint (20 requests/hour/IP).
+- Added robust Gemini API proxy with timeout handling and error formatting.
+- Implemented Undo/Redo stack (capped at 20 entries).
+
+3. SECURITY IMPROVEMENTS
+- Added `private-config.php` for secure API key storage, blocked by `.htaccess`.
+- Support for external config loading (outside `public_html`).
+- Enforced `authCheck()` on all new admin endpoints.
+- Added strict JSON validation (`json_validate`) before any file writes.
+- Added file locking (`LOCK_EX`) during writes.
+
+4. PERFORMANCE OPTIMIZATIONS
+- Chat widget uses local storage to persist sessions and reduce API calls.
+- Command Center utilizes `AbortController` to cancel pending AI requests if a new one is initiated.
+
+5. ACCESSIBILITY UPGRADES
+- Added ARIA live regions (`aria-live="polite"`, `aria-live="assertive"`) to AI Inspector and Chat Widget.
+- Ensured keyboard navigability for all new AI interfaces.
+- Added visual indicators for voice input states.
+
+6. PRESERVED FROM v1/v2
+- All 20 existing `api.php` endpoints remain untouched and fully functional.
+- Existing Admin UI, tabs, and save logic are preserved.
+- Premium 3D animations, glass cards, and reveal effects remain intact.
+- Old WordPress site at root remains completely isolated.

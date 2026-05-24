@@ -1,0 +1,155 @@
+{
+  "brand": {
+    "name": "Al Muqeet Technical Services LLC",
+    "shortName": "Al Muqeet",
+    "legalName": "Al Muqeet Technical Services LLC",
+    "tagline": "Construction, MEP, civil, renovation and maintenance across the UAE",
+    "location": "Ajman, United Arab Emirates",
+    "logoUrl": "",
+    "faviconUrl": ""
+  },
+  "theme": {
+    "name": "Premium Gray / Silver / Champagne Gold",
+    "background": ["#F4F5F7","#ECEFF3","#DDE1E7","#F8F8F6"],
+    "surface": ["rgba(255,255,255,0.72)","rgba(245,245,242,0.78)","#FFFFFF","#F7F7F5"],
+    "text": ["#1F2328","#2B2D31","#3A3D42","#6B7280"],
+    "buttons": ["#111827","#232529","#2B2D31","#3A3A3A"],
+    "gold": ["#C8A24A","#D6B85A","#B8912F","#E2C76B"],
+    "border": ["rgba(31,35,40,0.10)","rgba(200,162,74,0.25)"],
+    "overlay": ["rgba(31,35,40,0.55)","rgba(31,35,40,0.20)"],
+    "blur": "18px",
+    "shadow": "0 20px 50px -24px rgba(31,35,40,0.22)",
+    "cool": "#BFC7D5"
+  },
+  "fonts": {
+    "heading": "Playfair Display, Georgia, serif",
+    "body": "Inter, system-ui, sans-serif",
+    "button": "Inter, system-ui, sans-serif",
+    "mono": "JetBrains Mono, ui-monospace, monospace",
+    "headingWeight": "600",
+    "bodyWeight": "400",
+    "buttonWeight": "600",
+    "letterSpacing": "0.02em"
+  },
+  "hero": {
+    "eyebrow": "UAE's Trusted Technical Services Partner",
+    "title": "Building and maintaining the systems behind every strong space.",
+    "sub": "Al Muqeet Technical Services LLC delivers construction, MEP works, civil works, renovation, roofing, plumbing, electrical, industrial services, wood works, aluminium works, maintenance, and skilled manpower support across Ajman and the UAE.",
+    "ctaPrimary": "Request a Quote",
+    "ctaSecondary": "Explore Services",
+    "image": "/images/almuqeet-hero.png",
+    "video": "",
+    "overlayTitle": "Cinematic delivery for built environments",
+    "overlayCopy": "Construction-grade precision, maintenance reliability, and premium technical execution.",
+    "heroBgMode": "static",
+    "enable3d": true,
+    "enableParticles": true,
+    "enableGrid": true,
+    "mobileFallback": "/images/almuqeet-hero.png"
+  },
+  "about": {
+    "title": "A technical partner for construction, maintenance and specialist works.",
+    "intro": "We support residential, commercial, industrial and facilities clients with a premium service model rooted in safety, speed and workmanship.",
+    "mission": "To deliver dependable technical solutions that keep buildings performing beautifully.",
+    "vision": "To be the most trusted multi-discipline technical services partner in Ajman and across the UAE.",
+    "quality": "Quality is built into materials, sequencing, supervision and final handover.",
+    "safety": "Safety-first planning guides every site visit, method statement and execution step.",
+    "image": "/images/almuqeet-services.png"
+  },
+  "services": [
+    { "icon": "tower", "title": "Construction", "short": "Turn-key building works", "desc": "General construction execution for commercial and residential spaces, from foundations to finishes.", "category": "Core", "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80", "featured": true, "enabled": true },
+    { "icon": "blueprint", "title": "Home Renovation", "short": "Premium upgrades", "desc": "Full or partial renovations with premium finishes, spatial improvements and technical coordination.", "category": "Renovation", "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80", "featured": true, "enabled": true },
+    { "icon": "gear", "title": "Roofing Services", "short": "Weatherproof systems", "desc": "Roof repair, waterproofing, sheet work and protective detailing for long-lasting performance.", "category": "Specialist", "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1400&q=80", "featured": true, "enabled": true },
+    { "icon": "shield", "title": "Industrial Services", "short": "Site support & fabrication", "desc": "Industrial maintenance and service support aligned with demanding operational environments.", "category": "Industrial", "image": "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "icon": "leaf", "title": "Plumbing", "short": "Water systems", "desc": "Plumbing installation, repairs and maintenance for clean, efficient water performance.", "category": "MEP", "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "icon": "spark", "title": "MEP Works", "short": "Mechanical, electrical, plumbing", "desc": "Coordinated MEP execution for reliable building performance and handover readiness.", "category": "MEP", "image": "/images/almuqeet-services.png", "featured": true, "enabled": true },
+    { "icon": "tower", "title": "Electrical Works", "short": "Power and lighting", "desc": "Electrical installation, testing and maintenance for safe and optimized power delivery.", "category": "MEP", "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "icon": "blueprint", "title": "Civil Works", "short": "Structural groundwork", "desc": "Civil engineering support, concrete works, blockwork and site preparation services.", "category": "Core", "image": "https://images.unsplash.com/photo-1529429617124-95b109e86bb8?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "icon": "gear", "title": "Wood Works", "short": "Custom carpentry", "desc": "Built-ins, joinery, fit-out carpentry and precise wood finishing for practical elegance.", "category": "Fit-out", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "icon": "shield", "title": "Aluminium Works", "short": "Frames and facade elements", "desc": "Aluminium fabrication and installation for windows, partitions, doors and cladding details.", "category": "Fit-out", "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "icon": "leaf", "title": "Technical Maintenance", "short": "Preventive care", "desc": "Scheduled and reactive maintenance to keep assets running cleanly and efficiently.", "category": "Maintenance", "image": "/images/almuqeet-contact.png", "featured": true, "enabled": true },
+    { "icon": "spark", "title": "Skilled Manpower Support", "short": "Flexible site teams", "desc": "Qualified technical manpower support for projects, fit-out and maintenance operations.", "category": "Support", "image": "/images/almuqeet-careers.png", "featured": false, "enabled": true }
+  ],
+  "process": [
+    { "step": "01", "title": "Consultation", "desc": "We study the scope, site conditions, priorities and delivery timeline." },
+    { "step": "02", "title": "Planning", "desc": "Our team prepares the execution plan, materials, manpower and sequencing." },
+    { "step": "03", "title": "Execution", "desc": "We mobilize skilled teams to deliver precise work with disciplined supervision." },
+    { "step": "04", "title": "Quality Handover", "desc": "Final checks, testing and clean handover complete the service cycle." }
+  ],
+  "projects": [
+    { "title": "Ajman Residential Renovation", "type": "Renovation", "year": "2025", "location": "Ajman, UAE", "short": "Premium refresh of interiors and technical systems.", "desc": "A clean renovation scope combining flooring, paint, carpentry, electrical adjustments and final detailing.", "image": "/images/almuqeet-projects.png", "featured": true, "enabled": true },
+    { "title": "Commercial MEP Upgrade", "type": "MEP Works", "year": "2024", "location": "Sharjah, UAE", "short": "Mechanical and electrical system uplift.", "desc": "Coordinated MEP works improving operational efficiency, safety and maintainability.", "image": "https://images.unsplash.com/photo-1514361892635-eae31b1f23b5?auto=format&fit=crop&w=1400&q=80", "featured": true, "enabled": true },
+    { "title": "Warehouse Industrial Support", "type": "Industrial Services", "year": "2024", "location": "Dubai, UAE", "short": "Site support and maintenance readiness.", "desc": "Industrial support work across access, steel fixes, maintenance and site coordination.", "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "title": "Roof Waterproofing Works", "type": "Roofing Services", "year": "2025", "location": "Ajman, UAE", "short": "Protection against weather and leaks.", "desc": "Roofing and waterproofing intervention designed for long-term performance and reduced maintenance.", "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "title": "Corporate Electrical Fit-out", "type": "Electrical Works", "year": "2024", "location": "Abu Dhabi, UAE", "short": "Power and lighting execution.", "desc": "Electrical fit-out for a busy commercial environment with efficient delivery and testing.", "image": "https://images.unsplash.com/photo-1516024187862-26f1a6b5c5e9?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true },
+    { "title": "Joinery and Aluminium Package", "type": "Fit-out", "year": "2025", "location": "Dubai, UAE", "short": "Custom finishes and facade details.", "desc": "Wood and aluminium works delivered with precise fabrication, fit and finish.", "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80", "featured": false, "enabled": true }
+  ],
+  "stats": [
+    { "value": "15+", "label": "Years of Technical Experience" },
+    { "value": "12", "label": "Service Disciplines" },
+    { "value": "120+", "label": "Team Capacity" },
+    { "value": "UAE-wide", "label": "Coverage" }
+  ],
+  "careers": [
+    { "role": "Site Supervisor", "type": "Full-time", "location": "Ajman", "desc": "Lead daily site execution, sequencing and quality coordination.", "featured": true },
+    { "role": "MEP Technician", "type": "Full-time", "location": "UAE", "desc": "Support mechanical, electrical and plumbing installations and maintenance.", "featured": true },
+    { "role": "Carpenter / Joiner", "type": "Contract", "location": "Ajman", "desc": "Deliver precise wood work and fit-out installations.", "featured": false },
+    { "role": "Electrical Technician", "type": "Full-time", "location": "Sharjah", "desc": "Execute safe electrical works and testing support.", "featured": false }
+  ],
+  "contact": {
+    "phone": "+971 6 000 0000",
+    "email": "info@almuqeet.ae",
+    "whatsapp": "+971500000000",
+    "address": "Ajman, United Arab Emirates",
+    "hours": "Mon - Sat, 8:00 AM - 6:00 PM",
+    "mapEmbed": ""
+  },
+  "social": [
+    { "name": "Instagram", "url": "#" },
+    { "name": "LinkedIn", "url": "#" },
+    { "name": "WhatsApp", "url": "https://wa.me/971500000000" },
+    { "name": "Email", "url": "mailto:info@almuqeet.ae" }
+  ],
+  "sections": {
+    "home": { "hero": true, "assembly": true, "story": true, "services": true, "process": true, "projects": true, "stats": true, "careers": true, "contact": true, "footer": true },
+    "about": { "hero": true, "story": true, "values": true, "team": true, "cta": true },
+    "services": { "hero": true, "grid": true, "cta": true },
+    "projects": { "hero": true, "grid": true, "cta": true },
+    "careers": { "hero": true, "roles": true, "perks": true },
+    "contact": { "hero": true, "form": true, "details": true }
+  },
+  "media": {
+    "library": [],
+    "heroImages": [
+      { "url": "/images/almuqeet-hero.png", "alt": "Al Muqeet hero construction scene", "enabled": true },
+      { "url": "/images/almuqeet-services.png", "alt": "Al Muqeet technical services", "enabled": true },
+      { "url": "/images/almuqeet-projects.png", "alt": "Al Muqeet project image", "enabled": true }
+    ],
+    "heroVideos": [],
+    "splineUrl": "",
+    "lottieUrl": ""
+  },
+  "auth": {
+    "defaultUsername": "admin",
+    "defaultEmail": "admin@almuqeet.ae",
+    "passwordHint": "Admin@2026",
+    "roles": ["Super Admin","Admin","Editor","Viewer"]
+  },
+  "snippets": [],
+  "seo": {
+    "/": { "title": "Al Muqeet Technical Services LLC", "description": "Construction, MEP, civil works, renovation and maintenance across the UAE.", "keywords": "technical services uae, construction ajman, mep works dubai" },
+    "/about": { "title": "About Al Muqeet Technical Services", "description": "Learn about our company, mission, values and team.", "keywords": "about al muqeet, technical services company" },
+    "/services": { "title": "Services - Al Muqeet Technical Services", "description": "Full range of construction, MEP, renovation and maintenance services.", "keywords": "construction services, mep services, renovation uae" },
+    "/projects": { "title": "Projects - Al Muqeet Technical Services", "description": "Project references and site support work across the UAE.", "keywords": "technical projects, construction references uae" },
+    "/careers": { "title": "Careers - Al Muqeet Technical Services", "description": "Join our team of technical professionals.", "keywords": "technical careers uae, construction jobs ajman" },
+    "/contact": { "title": "Contact Al Muqeet Technical Services", "description": "Get in touch for a quote or service inquiry.", "keywords": "contact technical services, quote uae" }
+  },
+  "floatingCards": {
+    "enabled": true,
+    "cards": [
+      { "title": "Material Focus", "icon": "tower", "content": "Premium finishes · Reliable systems", "position": "left", "enabled": true },
+      { "title": "Project Status", "icon": "gear", "content": "Active across UAE sites", "position": "right", "enabled": true }
+    ]
+  },
+  "announcementBar": { "text": "", "enabled": false, "bgColor": "#1F2328", "textColor": "#FFFFFF" }
+}

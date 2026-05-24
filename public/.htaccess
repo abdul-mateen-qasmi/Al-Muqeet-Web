@@ -1,0 +1,77 @@
+# ===== Al Muqeet Preview .htaccess v3.0 =====
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "camera=(), microphone=(self), geolocation=()"
+    Header unset X-Powered-By
+    Header unset Server
+</IfModule>
+
+# Disable directory listing
+Options -Indexes -MultiViews
+
+# Block sensitive files
+<FilesMatch "^\.|composer\.|package\.|\.env">
+    Require all denied
+</FilesMatch>
+
+<Files "private-config.php">
+    Require all denied
+</Files>
+
+# Block direct JSON file access (force going through api.php)
+<FilesMatch "\.(json|log)$">
+    Require all denied
+</FilesMatch>
+
+# Allow specific files if needed (none currently)
+
+# UTF-8 default
+AddDefaultCharset UTF-8
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Force HTTPS (uncomment after SSL is verified working)
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# SPA rewrite — all paths → index.html (except real files/PHP)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /preview/
+    
+    # Don't rewrite for real files/folders
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+    
+    # Don't rewrite PHP files
+    RewriteRule \.php$ - [L]
+    
+    # Admin route → admin.html
+    RewriteRule ^admin/?$ admin.html [L]
+    
+    # Everything else → index.html (SPA)
+    RewriteRule ^ index.html [L]
+</IfModule>

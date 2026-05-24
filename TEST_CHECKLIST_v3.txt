@@ -1,0 +1,35 @@
+Al Muqeet v3.0 APEX — Post-Deployment Test Checklist
+
+1. CRITICAL TESTS (Must Pass)
+[ ] Website loads at /preview/ without console errors.
+[ ] Admin loads at /preview/admin.
+[ ] Login works with existing credentials.
+[ ] Existing "Save & Publish" button still works and updates site-data.json.
+[ ] Contact form on /preview/contact still saves to Messages Inbox.
+
+2. NEW FEATURE TESTS
+[ ] AI Inspector: Type "Where is the hero title?" -> Returns valid JSON-formatted answer.
+[ ] AI Inspector: Voice input button activates microphone.
+[ ] Command Center V2: Type "Turn on announcement bar" -> Shows preview diff.
+[ ] Command Center V2: Click "Apply" -> Applies change, shows success, reloads data.
+[ ] Command Center V2: Click "Undo" -> Reverts the announcement bar change.
+[ ] Preset Gallery: Apply "Minimal Clean" theme -> Updates UI colors.
+[ ] Issue Checker: Click "Run Full Scan" -> Completes without fatal errors.
+[ ] Chat Widget: Appears on /preview/ but NOT on /preview/admin.
+[ ] Chat Widget: Ask "Do you do plumbing?" -> AI responds accurately.
+[ ] Chat Widget: Ask "Call me" -> Triggers lead capture form.
+
+3. SECURITY TESTS
+[ ] Attempt to access /preview/private-config.php directly in browser -> Returns 403 Forbidden.
+[ ] Attempt to access /preview/data/site-data.json directly -> Returns 403 Forbidden.
+[ ] Attempt to use Command Center without logging in (via Postman/cURL) -> Returns 401 Unauthorized.
+
+4. PERFORMANCE TESTS
+[ ] Chat Widget opens smoothly without lagging the main thread.
+[ ] Command Center preview returns within ~5 seconds.
+[ ] Admin tab switching remains instant (< 100ms).
+
+5. ACCESSIBILITY TESTS
+[ ] Can navigate to Chat Widget using only the Tab key.
+[ ] Screen reader announces "Analyzing..." when Command Center is processing.
+[ ] Color contrast in new Admin tabs meets AA standards.

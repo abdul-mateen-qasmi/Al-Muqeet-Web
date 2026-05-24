@@ -1,0 +1,129 @@
+{
+  "themePresets": {
+    "luxury_silver_glass": {
+      "label": "Luxury Silver Glass",
+      "description": "Premium silver palette with strong glass blur",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "theme.background[0]", "value": "#F4F5F7" },
+          { "op": "set", "path": "theme.background[1]", "value": "#ECEFF3" },
+          { "op": "set", "path": "theme.background[2]", "value": "#DDE1E7" },
+          { "op": "set", "path": "theme.gold[0]", "value": "#C8A24A" },
+          { "op": "set", "path": "theme.gold[1]", "value": "#D6B85A" },
+          { "op": "set", "path": "theme.blur", "value": "20px" }
+        ]
+      }
+    },
+    "construction_executive": {
+      "label": "Construction Executive Dark",
+      "description": "Bold dark with gold accents",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "theme.background[0]", "value": "#1F2937" },
+          { "op": "set", "path": "theme.background[1]", "value": "#111827" },
+          { "op": "set", "path": "theme.text[0]", "value": "#F9FAFB" },
+          { "op": "set", "path": "theme.gold[0]", "value": "#D6B85A" }
+        ]
+      }
+    },
+    "minimal_clean": {
+      "label": "Minimal Clean",
+      "description": "Pure white minimalist",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "theme.background[0]", "value": "#FFFFFF" },
+          { "op": "set", "path": "theme.background[1]", "value": "#F9FAFB" },
+          { "op": "set", "path": "theme.blur", "value": "12px" }
+        ]
+      }
+    },
+    "cinematic_glass": {
+      "label": "Cinematic Glass",
+      "description": "Movie-poster aesthetic with deep blur",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "theme.background[0]", "value": "#0F172A" },
+          { "op": "set", "path": "theme.background[1]", "value": "#1E293B" },
+          { "op": "set", "path": "theme.gold[0]", "value": "#E2C76B" },
+          { "op": "set", "path": "theme.blur", "value": "28px" }
+        ]
+      }
+    }
+  },
+  "heroPresets": {
+    "premium_3d_animated": {
+      "label": "Premium 3D Animated",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "hero.enable3d", "value": true },
+          { "op": "set", "path": "hero.enableParticles", "value": true },
+          { "op": "set", "path": "hero.enableGrid", "value": true },
+          { "op": "set", "path": "hero.heroBgMode", "value": "3d" }
+        ]
+      }
+    },
+    "minimal_flat": {
+      "label": "Minimal Flat",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "hero.enable3d", "value": false },
+          { "op": "set", "path": "hero.enableParticles", "value": false },
+          { "op": "set", "path": "hero.enableGrid", "value": false },
+          { "op": "set", "path": "hero.heroBgMode", "value": "static" }
+        ]
+      }
+    },
+    "particles_only": {
+      "label": "Particles Only (No 3D)",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "hero.enable3d", "value": false },
+          { "op": "set", "path": "hero.enableParticles", "value": true },
+          { "op": "set", "path": "hero.enableGrid", "value": false }
+        ]
+      }
+    }
+  },
+  "announcementPresets": {
+    "promo_active": {
+      "label": "Promo Active",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "announcementBar.enabled", "value": true },
+          { "op": "set", "path": "announcementBar.text", "value": "🎉 Free site visit this week — Call now" },
+          { "op": "set", "path": "announcementBar.bgColor", "value": "#C8A24A" },
+          { "op": "set", "path": "announcementBar.textColor", "value": "#111827" }
+        ]
+      }
+    },
+    "ramadan_greeting": {
+      "label": "Ramadan Greeting",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "announcementBar.enabled", "value": true },
+          { "op": "set", "path": "announcementBar.text", "value": "🌙 Ramadan Kareem — Special offers all month" },
+          { "op": "set", "path": "announcementBar.bgColor", "value": "#1F2328" },
+          { "op": "set", "path": "announcementBar.textColor", "value": "#D6B85A" }
+        ]
+      }
+    },
+    "off": {
+      "label": "Hide Announcement",
+      "patch": {
+        "type": "batch",
+        "operations": [
+          { "op": "set", "path": "announcementBar.enabled", "value": false }
+        ]
+      }
+    }
+  }
+}

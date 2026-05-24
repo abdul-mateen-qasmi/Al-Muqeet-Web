@@ -1,0 +1,98 @@
+{
+  "version": "3.0",
+  "generated": "2026-05-01T12:00:00Z",
+  "routes": [
+    { "hash": "/", "page": "Home.tsx", "dataKeys": ["hero", "services", "projects", "stats"] },
+    { "hash": "/about", "page": "About.tsx", "dataKeys": ["brand", "about", "stats"] },
+    { "hash": "/services", "page": "Services.tsx", "dataKeys": ["services", "hero.image"] },
+    { "hash": "/projects", "page": "Projects.tsx", "dataKeys": ["projects"] },
+    { "hash": "/careers", "page": "Careers.tsx", "dataKeys": ["careers", "contact.email"] },
+    { "hash": "/contact", "page": "Contact.tsx", "dataKeys": ["contact", "social"] },
+    { "hash": "/admin", "page": "Admin.tsx", "dataKeys": ["ALL"] }
+  ],
+  "buttons": [
+    {
+      "id": "hero_cta_primary",
+      "label": "Hero Primary CTA",
+      "type": "data-driven",
+      "file": "src/pages/Home.tsx",
+      "component": "Hero",
+      "dataKey": "hero.ctaPrimary",
+      "routeTarget": "/contact",
+      "router": "src/lib/router.tsx",
+      "opens": "src/pages/Contact.tsx",
+      "afterSubmit": "api.php?action=message → data/messages.json",
+      "adminEdit": "Admin → Hero Section → CTA Primary",
+      "safePatchPath": "hero.ctaPrimary",
+      "risk": "low"
+    },
+    { "id": "hero_cta_secondary", "label": "Hero Secondary CTA", "dataKey": "hero.ctaSecondary", "safePatchPath": "hero.ctaSecondary", "risk": "low" },
+    { "id": "nav_request_quote", "label": "Nav Request Quote", "type": "hardcoded", "file": "src/components/Layout.tsx", "routeTarget": "/contact", "risk": "medium", "note": "Hardcoded in Layout — consider migrating to data" },
+    { "id": "contact_submit", "label": "Contact Form Submit", "file": "src/pages/Contact.tsx", "apiAction": "message", "storage": "data/messages.json", "adminView": "Admin → Messages", "risk": "low" },
+    { "id": "whatsapp_button", "label": "WhatsApp Float", "dataKey": "contact.whatsapp", "safePatchPath": "contact.whatsapp", "risk": "low" },
+    { "id": "control_room_link", "label": "Admin Link", "type": "hardcoded", "file": "src/components/Layout.tsx", "value": "/admin", "risk": "medium", "note": "Hardcoded — preview-safe in current build" }
+  ],
+  "components": [
+    { "name": "Hero", "file": "src/pages/Home.tsx", "dataKeys": ["hero.*"] },
+    { "name": "ServicesUniverse", "file": "src/pages/Home.tsx", "dataKeys": ["services"] },
+    { "name": "ProjectsShowcase", "file": "src/pages/Home.tsx", "dataKeys": ["projects"] },
+    { "name": "Stats", "file": "src/pages/Home.tsx", "dataKeys": ["stats"] },
+    { "name": "ProcessJourney", "file": "src/pages/Home.tsx", "dataKeys": ["process"] },
+    { "name": "CareersGrowth", "file": "src/pages/Home.tsx", "dataKeys": ["careers.roles"] },
+    { "name": "ContactCTA", "file": "src/pages/Home.tsx", "dataKeys": ["contact.*"] },
+    { "name": "Layout", "file": "src/components/Layout.tsx", "dataKeys": ["brand", "social"] },
+    { "name": "MediaFrame", "file": "src/components/MediaFrame.tsx", "dataKeys": [] },
+    { "name": "Ambience", "file": "src/components/Ambience.tsx", "dataKeys": [] },
+    { "name": "Decor", "file": "src/components/Decor.tsx", "dataKeys": [] },
+    { "name": "ProjectVisual", "file": "src/components/ProjectVisual.tsx", "dataKeys": [] }
+  ],
+  "apiChains": [
+    { "action": "message", "trigger": "Contact form submit", "method": "POST", "auth": false, "storage": "data/messages.json", "adminView": "Admin → Messages Inbox" },
+    { "action": "save_site", "trigger": "Admin Save & Publish", "method": "POST", "auth": true, "autoBackup": true, "storage": "data/site-data.json" },
+    { "action": "command_apply", "trigger": "Command Center V2 Apply", "method": "POST", "auth": true, "autoBackup": true, "storage": "data/site-data.json" },
+    { "action": "ai_chat", "trigger": "Public chat widget", "method": "POST", "auth": false, "rateLimit": "20/hour/IP", "storage": "data/chat-conversations.json" },
+    { "action": "ai_agent", "trigger": "Inspector + Command Center AI", "method": "POST", "auth": true, "external": "Gemini API" }
+  ],
+  "safeEditPaths": [
+    "hero.title", "hero.sub", "hero.eyebrow", "hero.ctaPrimary", "hero.ctaSecondary",
+    "hero.overlayTitle", "hero.overlayCopy", "hero.image", "hero.video",
+    "hero.enable3d", "hero.enableParticles", "hero.enableGrid", "hero.heroBgMode",
+    "brand.tagline", "brand.shortName",
+    "announcementBar.enabled", "announcementBar.text", "announcementBar.bgColor", "announcementBar.textColor",
+    "contact.phone", "contact.email", "contact.whatsapp", "contact.address", "contact.hours",
+    "services[*].title", "services[*].short", "services[*].desc", "services[*].featured", "services[*].enabled",
+    "projects[*].title", "projects[*].featured",
+    "stats[*].value", "stats[*].label",
+    "social[*].url", "social[*].enabled",
+    "theme.background[0]", "theme.background[1]", "theme.background[2]", "theme.background[3]",
+    "theme.surface[0]", "theme.surface[1]", "theme.surface[2]", "theme.surface[3]",
+    "theme.text[0]", "theme.text[1]", "theme.text[2]", "theme.text[3]",
+    "theme.buttons[0]", "theme.buttons[1]", "theme.buttons[2]", "theme.buttons[3]",
+    "theme.gold[0]", "theme.gold[1]", "theme.gold[2]", "theme.gold[3]",
+    "theme.border[0]", "theme.border[1]",
+    "theme.overlay[0]", "theme.overlay[1]",
+    "theme.blur", "theme.shadow", "theme.cool",
+    "fonts.display", "fonts.body",
+    "sections.showMarquee", "sections.showStats", "sections.showCareers",
+    "seo[*].title", "seo[*].desc", "seo[*].keywords",
+    "floatingCards[*].label", "floatingCards[*].value", "floatingCards[*].visible"
+  ],
+  "dangerZones": [
+    { "path": "theme.background", "risk": "medium", "reason": "Invalid hex breaks visual" },
+    { "path": "theme.surface", "risk": "medium", "reason": "Invalid hex breaks visual" },
+    { "path": "theme.text", "risk": "medium", "reason": "Invalid hex breaks visual" },
+    { "path": "theme.buttons", "risk": "medium", "reason": "Invalid hex breaks visual" },
+    { "path": "theme.gold", "risk": "medium", "reason": "Invalid hex breaks visual" },
+    { "path": "theme.border", "risk": "medium", "reason": "Invalid hex breaks visual" },
+    { "path": "theme.overlay", "risk": "medium", "reason": "Invalid hex breaks visual" },
+    { "path": "snippets.js", "risk": "high", "reason": "Raw JS — syntax errors break site globally" },
+    { "path": "snippets.html", "risk": "high", "reason": "Raw HTML injection" },
+    { "path": "snippets.css", "risk": "medium", "reason": "Bad CSS can hide content" },
+    { "path": "auth.*", "risk": "critical", "reason": "Affects login security" }
+  ],
+  "hardcodedItems": [
+    { "item": "Admin link", "file": "src/components/Layout.tsx", "value": "/admin", "risk": "low" },
+    { "item": "Team/Values content", "file": "src/pages/About.tsx", "note": "Not data-driven" },
+    { "item": "Career perks", "file": "src/pages/Careers.tsx", "note": "Not data-driven" }
+  ]
+}
