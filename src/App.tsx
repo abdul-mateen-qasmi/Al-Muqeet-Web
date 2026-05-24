@@ -1,3 +1,7 @@
+import { builder } from "@builder.io/react";
+
+// Initialize Builder with your API key
+builder.init("ef973c07b25c4fd283c11468b61ebb55");
 import { type CSSProperties } from "react";
 import { RouterProvider, useRouter } from "./lib/router";
 import { useSiteData } from "./lib/useSiteData";

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@builder.io/react": "^9.4.0",
     "@plasmicapp/react-web": "^1.0.9",
     "clsx": "2.1.1",
     "react": "19.2.3",
